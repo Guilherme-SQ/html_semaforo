@@ -2,18 +2,21 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $cor = $_POST['cor'];
 
+                $mensagem = "";
+                $cor = "";
+
             switch ($cor) {
                 case 'Vermelho':
-                    echo "Pare Imediatamente!";
+                    $mensagem = "Pare Imediatamente!";
                     break;
                 case 'Verde':
-                    echo "Siga em Frente!";
+                    $mensagem = "Siga em Frente!";
                     break;
                 case 'Laranja':
-                    echo "Atenção Reduza!";
+                    $mensagem = "Atenção Reduza!";
                     break;
                 default:
-                    echo "Cor inexistente no semafaro!";
+                    $mensagem = "Cor inexistente no semafaro!";
             }
         }
 ?>
