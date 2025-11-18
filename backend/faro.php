@@ -3,16 +3,15 @@
             $cor = $_POST['cor'];
 
                 $mensagem = "";
-                $cor = "";
 
             switch ($cor) {
-                case 'Vermelho':
+                case "Vermelho":
                     $mensagem = "Pare Imediatamente!";
                     break;
-                case 'Verde':
+                case "Verde":
                     $mensagem = "Siga em Frente!";
                     break;
-                case 'Laranja':
+                case "Laranja":
                     $mensagem = "Atenção Reduza!";
                     break;
                 default:
@@ -20,6 +19,7 @@
             }
         }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +28,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo $cor;?>
+    <?php echo $mensagem;?>
 </body>
 </html>
